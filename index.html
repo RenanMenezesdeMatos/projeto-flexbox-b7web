@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto B7Web</title>
     <link rel="stylesheet" href="assets/estilos/style.css">
+    <link rel="stylesheet" href="assets/estilos/mediaqueries.css">
+
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menumobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };    
+    </script>
 </head>
 <body>
     
@@ -20,13 +33,18 @@
             </div>
             <div class="menu">
 
+                <div class="menumobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
+
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">Agendamentos</a></li>
                     </ul>
                 </nav>
 
